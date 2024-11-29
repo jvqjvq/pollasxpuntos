@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLLAS POR PUNTOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>POLLAS POR PUNTOS</h1>
+        <h2>LA RINCONADA (01/12/24)</h2>
+        <form id="quinielaForm">
+            <div class="carrera">
+                <label for="carrera1">1ra. Válida:</label>
+                <div id="carrera1" class="options"></div>
+            </div>
+            <div class="carrera">
+                <label for="carrera2">2da. Válida:</label>
+                <div id="carrera2" class="options"></div>
+            </div>
+            <div class="carrera">
+                <label for="carrera3">3ra. Válida:</label>
+                <div id="carrera3" class="options"></div>
+            </div>
+            <div class="carrera">
+                <label for="carrera4">4ta. Válida:</label>
+                <div id="carrera4" class="options"></div>
+            </div>
+            <div class="carrera">
+                <label for="carrera5">5ta. Válida:</label>
+                <div id="carrera5" class="options"></div>
+            </div>
+            <div class="carrera">
+                <label for="carrera6">6ta. Válida:</label>
+                <div id="carrera6" class="options"></div>
+            </div>
+            <div>
+                <h3>Total: $<span id="totalPrice">2</span></h3>
+            </div>
+            <button type="submit">Registrar Apuesta</button>
+        </form>
+        <!-- Contenedor del ticket -->
+        <div id="ticket" style="display: none;">
+            <h2>POLLAS POR PUNTOS</h2>
+            <p><strong>Fecha:</strong> <span id="ticketFecha"></span></p>
+            <hr>
+            <div id="ticketDetalles"></div>
+            <p><strong>Total:</strong> $<span id="ticketTotal"></span></p>
+            <p>¡Gracias por participar!</p>
+        </div>
+        <!-- Botón para imprimir el ticket -->
+        <button id="printTicket" style="display: none;">Imprimir Ticket</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
